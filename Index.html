@@ -1,0 +1,204 @@
+<!doctype html>
+
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project God — Estudo & Criação de Ecossistemas</title>
+  <meta name="description" content="Project God — pesquisa experimental para estudar, replicar e criar ecossistemas. Protocolos, ética e laboratórios de campo." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <style>
+    /* === Reset & Base === */
+    :root{
+      --bg:#0f1724; /* deep navy */
+      --card:#0b1220;
+      --muted:#9aa4b2;
+      --accent:#7dd3fc; /* cyan */
+      --accent-2:#60a5fa; /* blue */
+      --glass: rgba(255,255,255,0.04);
+      --radius:16px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; background:linear-gradient(180deg,var(--bg) 0%, #071022 100%); color:#e6eef7; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+      line-height:1.45; padding:32px; display:flex; align-items:flex-start; justify-content:center;
+    }
+    .container{max-width:1100px; width:100%;}/* === Header === */
+header{display:flex; align-items:center; justify-content:space-between; gap:20px; margin-bottom:28px}
+.brand{display:flex; align-items:center; gap:14px}
+.logo{width:58px; height:58px; border-radius:12px; background:linear-gradient(135deg,var(--accent),var(--accent-2)); display:flex; align-items:center; justify-content:center; font-weight:700; color:#022033; box-shadow:0 6px 20px rgba(96,165,250,0.12);}
+.brand h1{font-size:1.15rem; margin:0}
+.brand p{margin:0; font-size:0.78rem; color:var(--muted)}
+nav{display:flex; gap:12px; align-items:center}
+nav a{color:var(--muted); text-decoration:none; font-size:0.9rem}
+.cta{background:linear-gradient(90deg,var(--accent),var(--accent-2)); color:#042034; padding:10px 14px; border-radius:12px; font-weight:600; text-decoration:none}
+
+/* === Hero === */
+.hero{display:grid; grid-template-columns:1fr 380px; gap:28px; align-items:start}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent); border-radius:var(--radius); padding:24px; box-shadow: 0 6px 30px rgba(2,8,23,0.6); border:1px solid rgba(255,255,255,0.03)}
+.intro h2{margin:0 0 8px; font-size:1.8rem}
+.tag{display:inline-block; background:rgba(125,211,252,0.08); color:var(--accent); padding:6px 10px; border-radius:999px; font-weight:600; font-size:0.78rem}
+.intro p{color:var(--muted); margin-top:14px}
+
+/* panels */
+.stats{display:flex; gap:12px; margin-top:18px}
+.stat{flex:1; background:var(--glass); padding:12px; border-radius:12px; text-align:center}
+.stat h3{margin:0; font-size:1rem}
+.stat p{margin:6px 0 0; color:var(--muted); font-size:0.82rem}
+
+/* right column */
+.summary{padding:18px; border-radius:12px}
+.summary h3{margin:0 0 8px}
+.pill{display:inline-block; background:rgba(255,255,255,0.03); padding:8px 10px; border-radius:999px; font-size:0.85rem; margin-bottom:8px}
+.list{margin-top:10px}
+.list li{margin:10px 0; color:var(--muted); font-size:0.92rem}
+
+/* sections */
+section{margin-top:20px; display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+.feature{padding:18px; border-radius:12px}
+.feature h4{margin:0 0 10px}
+.feature p{color:var(--muted); margin:0}
+
+/* footer */
+footer{margin-top:26px; display:flex; justify-content:space-between; align-items:center; color:var(--muted); font-size:0.9rem}
+
+/* responsive */
+@media (max-width:980px){
+  .hero{grid-template-columns:1fr;}
+  section{grid-template-columns:1fr}
+  body{padding:18px}
+}
+
+/* subtle interactive */
+a.button-like{display:inline-block; padding:10px 12px; border-radius:10px; text-decoration:none}
+.glass-border{border:1px solid rgba(255,255,255,0.03)}
+
+/* contact form */
+.contact form{display:flex; flex-direction:column; gap:10px}
+input, textarea{background:transparent; border:1px solid rgba(255,255,255,0.06); padding:10px; border-radius:8px; color:inherit}
+input::placeholder, textarea::placeholder{color:rgba(255,255,255,0.35)}
+button[type=submit]{background:linear-gradient(90deg,var(--accent),var(--accent-2)); color:#022033; border:none; padding:10px 14px; border-radius:10px; font-weight:700}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">PG</div>
+        <div>
+          <h1>Project God</h1>
+          <p>Estudo e criação de ecossistemas — Pesquisa experimental</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">Sobre</a>
+        <a href="#protocols">Protocolos</a>
+        <a href="#ethics">Ética</a>
+        <a class="cta" href="#contact">Contato</a>
+      </nav>
+    </header><main>
+  <section class="hero">
+    <div class="card intro">
+      <span class="tag">Experimental • Prático • Aplicável</span>
+      <h2>Project God — criar e compreender ecossistemas do zero</h2>
+      <p>Project God explora a construção, replicação e modelagem de ecossistemas controlados para estudar padrões vitais, fluxos energéticos e as condições que possibilitam surgimento de vida.</p>
+
+      <div class="stats">
+        <div class="stat">
+          <h3>Microecossistemas</h3>
+          <p>Terrários e aquários de teste</p>
+        </div>
+        <div class="stat">
+          <h3>Protocolos</h3>
+          <p>Metodologias replicáveis</p>
+        </div>
+        <div class="stat">
+          <h3>Ética & Segurança</h3>
+          <p>Controle e responsabilidade</p>
+        </div>
+      </div>
+
+      <p style="margin-top:18px; color:var(--muted)">Este site é uma apresentação inicial e repositório conceitual. Os próximos passos incluem desenvolvimento de protocolos, registros de experimentos e guias de implementação prática.</p>
+
+    </div>
+
+    <aside class="card summary">
+      <h3>Resumo Rápido</h3>
+      <div class="pill">Objetivo: criar e replicar ecossistemas</div>
+      <ul class="list">
+        <li>Foco em construção experimental</li>
+        <li>Protocolos replicáveis</li>
+        <li>Registro e análise rigorosa</li>
+        <li>Estrita consideração ética</li>
+      </ul>
+    </aside>
+
+  </section>
+
+  <section id="about">
+    <article class="card feature glass-border">
+      <h4>Missão</h4>
+      <p>Entender os princípios que sustentam a vida em sistemas fechados e abertos, e traduzir esse conhecimento em protocolos práticos que podem ser aplicados em pesquisa de campo e laboratório.</p>
+    </article>
+
+    <article id="protocols" class="card feature glass-border">
+      <h4>Protocolos</h4>
+      <p>Modelos de microecossistemas, checklists de materiais, medição de parâmetros (pH, humidade, temperatura, biomassa), e instruções passo-a-passo para replicação.</p>
+    </article>
+
+    <article id="ethics" class="card feature glass-border">
+      <h4>Ética e Segurança</h4>
+      <p>Linhas guia para manipulação de organismos, análise de risco, salvaguardas legais e consentimento informado quando aplicável. Lux prioritário à biosegurança.</p>
+    </article>
+  </section>
+
+  <section style="grid-column:1 / -1; margin-top:18px">
+    <div class="card">
+      <h3>Exemplos de Experimentos</h3>
+      <p style="color:var(--muted); margin-top:8px">Micro-terrários, ciclagem de nutrientes em aquários controlados, reconstituição de solo, e simulações de condições pré-bióticas em microescala.</p>
+
+      <div style="display:flex; gap:12px; margin-top:14px; flex-wrap:wrap">
+        <div class="pill">Terrários selados</div>
+        <div class="pill">Sistemas aquáticos</div>
+        <div class="pill">Colônias microbianas</div>
+        <div class="pill">Modelagem computacional</div>
+      </div>
+    </div>
+  </section>
+
+  <section style="grid-column:1 / -1; margin-top:18px; display:grid; grid-template-columns:1fr 380px; gap:18px">
+    <div class="card contact">
+      <h3 id="contact">Contato e Colaboração</h3>
+      <p style="color:var(--muted)">Interessado em colaborar ou saber mais? Use o formulário abaixo para enviar uma mensagem. Para questões técnicas, inclua detalhes do seu background e área de interesse.</p>
+      <form onsubmit="event.preventDefault(); alert('Mensagem enviada (simulação)');">
+        <input type="text" placeholder="Seu nome" required />
+        <input type="email" placeholder="Email" required />
+        <textarea rows="5" placeholder="Como deseja colaborar?" required></textarea>
+        <button type="submit">Enviar mensagem</button>
+      </form>
+    </div>
+
+    <aside class="card">
+      <h4>Recursos iniciais</h4>
+      <p style="color:var(--muted)">Lista de materiais, referências teóricas e planta de amostragem estarão disponíveis aqui nas próximas versões do projeto.</p>
+      <div style="margin-top:12px">
+        <a class="button-like" href="#" onclick="alert('Download simulado')">Baixar resumo (PDF)</a>
+      </div>
+    </aside>
+  </section>
+
+</main>
+
+<footer>
+  <div>© Project God — Trabalho de Campo</div>
+  <div style="color:var(--muted)">Desenvolvido por equipe experimental — versão conceitual</div>
+</footer>
+
+  </div>  <script>
+    // Pequena interatividade futura
+    // Placeholder para melhorias (menu responsivo, animações, integração de CMS)
+  </script></body>
+        </html>
